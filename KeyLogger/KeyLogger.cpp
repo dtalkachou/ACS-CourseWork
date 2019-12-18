@@ -48,7 +48,7 @@ int Save(int key_stroke) {
 
 	if (foreground) {
 		char window_title[256];
-		GetWindowText(foreground, LPSTR(window_title), 256);
+		GetWindowTextA(foreground, LPSTR(window_title), 256);
 
 		if (strcmp(window_title, lastwindow)) {
 			strcpy(lastwindow, window_title);
